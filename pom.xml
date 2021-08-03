@@ -8,11 +8,11 @@
         <version>2.5.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.photons</groupId>
-    <artifactId>CrushedMonkey</artifactId>
+    <groupId>com.relayApplication</groupId>
+    <artifactId>relayApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ManyToManyManyToOneAndOneToOne</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Relation's Application AKA relayApplication</description>
     <properties>
         <java.version>11</java.version>
     </properties>
