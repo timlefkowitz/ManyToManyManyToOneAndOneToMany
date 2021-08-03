@@ -1,5 +1,11 @@
 package com.home.ManyToManyManyToOneAndOneToOne;
 
+
+
+//
+// Haham im love with this repo name
+//
+//
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class relayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CrushedMonkeyApplication.class, args);
+        SpringApplication.run(relayApplication.class, args);
     }
 
 }
