@@ -1,0 +1,130 @@
+<!---
+
+                                   ,##.                   ,==.
+                                 ,#    #.                 \ o ',
+                                #        #     _     _     \    \
+                                #        #    (_)   (_)    /    ;
+                                 `#    #'                 /   .'
+                                   `##'                   "=="
+
+            Welcome to Crushed Monkey, This is a SpringBoot Project I have started to
+            Collect game Reviews that I publish. Thank you for looking!
+            July 7 2021 - Timothy Craig Lefkowitz
+
+
+--->
+<!--Thank you for checking out CrushedMonkey-->
+<!--CrushedMonkey is a GameReview Website By Timothy Lefkowitz
+
+-- Monday July 5th 2020
+-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--<th:block th:include="partials/head :: head" class="head">-->
+<!--    <script data-ad-client="ca-pub-9282987433954760" async-->
+<!--            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+
+
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">-->
+
+<!--</th:block>-->
+
+
+<!--<link th:href="@{/partials/css/stylesheet.css}" rel="stylesheet">-->
+
+
+
+<head>
+    <link rel="stylesheet" th:href="@{/static/css/stylesheet.css}"/>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<head>
+<!--    <meta charset="UTF-8">-->
+<!--    <title>CrushedMonkey</title>-->
+    <link th:href="@{/css/stylesheet.css}" rel="stylesheet" />
+<!--    <script type="text/javascript" th:src="@{/js/actions.js}"></script>         this is if we want to add javascript   -->
+
+
+</head>
+
+
+<body style="display:flex; max-width:922px;">
+
+
+<img class="img-fluid" src="https://live.staticflickr.com/65535/51293258955_96d9d7f676_b.jpg"
+     alt="Logo Designed in Blender by Timothy Lefkowitz" style="display:block; width:100%;">
+
+
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav genres" style="display: flex; flex-direction: row; align-items: center;">
+
+
+            <li class="active"><a href="#">HOME</a></li>
+            <li class="active"><a href="#">ACTION</a></li>
+            <li class="active"><a href="#">ADVENTURE</a></li>
+            <li class="active"><a href="#">FPS</a></li>
+            <li class="active"><a href="#">RPG</a></li>
+            <li class="active"><a href="#">RACING</a></li>
+            <li class="active"><a href="#">FIGHTING</a></li>
+            <li class="active"><a href="#">STRATEGY</a></li>
+            <li class="active"><a href="#">SPORT</a></li>
+            <li class="active"><a href="#">SIMULATORS</a></li>
+            <li class="active"><a href="#">reTro</a></li>
+            </p>
+
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar text-nowrap">
+
+<!--    <div style="align-items: center" th:each="blogPosts : ${BlogPosts}">-->
+<!--        <h3 style="align-items: center"  ></h3>-->
+<!--        <p style="align-items: center" ><p/>-->
+
+
+        <div class="box w-100 p-3" style="width:100%;" th:each="blogPosts : ${BlogPosts}">
+            <div class="glass" th:text="${blogPosts.title}" style="word-wrap: break-word;"></div>
+            <div class="content" style="padding:0; margin:0;"  th:text="${blogPosts.description}">
+                <img th:src="${blogPosts.images}">
+            </div>
+        </div>
+
+
+
+
+
+
+
+</nav>
+
+
+<!--            Scripts                  -->
+
+
+<script data-ad-client="ca-pub-9282987433954760" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+
+</body>
+</html>
